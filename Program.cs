@@ -1,8 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
-
 //for books
 app.MapGet("/", () => "Home Page");
 app.MapGet("/books", () => "Get all books");
